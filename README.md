@@ -13,9 +13,17 @@ WYMAGANIA SYSTEMOWE:
 FUNKCJE WTYCZKI
   1. Różnica wysokości między dwoma punktami
      Użytkownik, aby policzyć różnicę wysokości między punktami wybiera dokładnie dwa z grupy punktów znajdujących się na tej samej warstwie.
-     Program pobierze wtedy wartości z tabeli atrybutów w programie QGIS z ?kolumny o nazwie 'h_plevrf2007nh'?, w której znajdują się 
+     Program pobierze wtedy wartości z tabeli atrybutów w programie QGIS z kolumny o nazwie 'h_plevrf2007nh', w której znajdują się 
      wysokości tych punktów. Wtyczka odejmować będzie wysokość punktu początkowego od wysokości punktu końcowego, co da wynik o znaku 
-     dodatnim bądź ujemnym - zależnie od tego w jakiej kolejności podamy nasze punkty. Na podstawie znaku uzyskanego przewyższenia 
+     dodatnim bądź ujemnym w metrach - zależnie od tego w jakiej kolejności podamy nasze punkty. Na podstawie znaku uzyskanego przewyższenia 
      będzie można zatem stwierdzić, czy na wybranym odcinku nastąpił wzrost czy spadek terenu.
      
+  2. Liczenie pola powierzchni pomiędzy zaznaczonymi punktami:
+  
+     Do obliczenia pola powierzchni między punktami należy z jednej warstwy wybrać przynajmniej trzy punkty. Następnie na podstawie współrzędych tych 
+     punktów, program metodą Gaussa policzy pole powierzchni zawarte między nimi i zapisze ten wynik w hektarach. 
+     
+ 
+     
+
     
